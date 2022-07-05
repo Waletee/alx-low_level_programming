@@ -1,4 +1,4 @@
-#include "putchar.h"
+#include "main.h"
 /**
  * main - main function .
  *
@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char h[] = "putchar";
+	char h[] = "main";
 	int s = sizeof(h);
 	int i;
 
