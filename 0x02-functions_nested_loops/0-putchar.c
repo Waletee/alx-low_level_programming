@@ -1,22 +1,21 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * main - Entry point
+ * main - main function .
  *
- * Description: A program that prints _putchar and new line
- *
- * Return: returns 0
- **/
+ * Return: 0
+ */
 int main(void)
 {
-	char c[8] = "_putchar";
-	int i = 0;
+	char h[] = "main";
+	int s = sizeof(h);
+	int i;
 
-	while (i < 8)
+	for (i = 0; i < s; i++)
 	{
-		_putchar(c[i]);
-		i++;
+		_putchar(h[i]);
+
 	}
+
 	_putchar('\n');
 	return (0);
+}
