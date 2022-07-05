@@ -1,21 +1,20 @@
 #include "main.h"
+
 /**
- * main - main function .
- *
- * Return: 0
+ * main - prints putchar
+ * Return: always 0
  */
 int main(void)
 {
-	char h[] = "_putchar";
-	int s = sizeof(h);
-	int i;
+        _putchar('_')
+        _putchar('p')
+        _putchar('u')
+        _putchar('t')
+        _putchar('c')
+        _putchar('h')
+        _putchar('a')
+        _putchar('r')
+        _putchar('\n')
 
-	for (i = 0; i < s; i++)
-	{
-		_putchar(h[i]);
-
-	}
-
-	_putchar('\n');
-	return (0);
+        return (0);
 }
