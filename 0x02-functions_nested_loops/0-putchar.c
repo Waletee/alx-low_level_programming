@@ -2,20 +2,15 @@
 /**
  * main - main function .
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char h[] = "_putchar";
-	int s = sizeof(h);
-	int i;
-
-	for (i = 0; i < s; i++)
+	char *sh = "_putchar";
+	while (*sh)
 	{
-		_putchar(h[i]);
-
-	}
-
+	_putchar(*sh);
+	sh++;
 	_putchar('\n');
 	return (0);
 }
