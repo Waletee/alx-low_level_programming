@@ -1,29 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - Printing first 50 Fibonacci numbers
- *
- *
+ * main - block to execute
+ * Desciption: computes and prints
  * Return: 0
  */
 int main(void)
 {
-	int i;
-	unsigned long f1 = 0, f2 = 1, s;
+	int i = 0;
+	long int a = 0, b = 1, next;
 
-	for (i = 0; i < 50; i++)
+	while (i < 50)
 	{
-		s = f1 + f2;
-		printf("lu%", s);
+		next = a + b;
+		a = b;
+		b = next;
+		printf("%lu", next);
 
-		f1 = f2;
-		f2 = s;
-
-		if (i == 49)
-			printf("\n");
-		else
+		if (i < 49)
+		{
 			printf(", ");
+		}
+		i++;
 	}
+	putchar('\n');
 
 	return (0);
 }
