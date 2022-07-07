@@ -4,13 +4,13 @@
  * _isdigit - checks for characters that are digits
  * @c: character 
  *
- * Return: 0 or 1
+ * Return: 0 if not uppercase or 1 if its uppercase
  */
 
 
 int _isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
+	if ((c >= 48) && (c <= 57))
 		return (1);
 	else
 		return (0);
