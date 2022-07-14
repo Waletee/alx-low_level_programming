@@ -1,7 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * reverse_array - reversing function.
+ * function that reverses the content of an array of integer
+ * Where n is the number of elements of the array
  * @a: pointer
  * @n: pointer
  * Return: No return
