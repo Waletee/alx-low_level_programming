@@ -12,6 +12,7 @@ char *move(char *s2);
  * Return: 1 if the strings can be considered identical
  * otherwise 0
  */
+
 int wildcmp(char *s1, char *s2)
 {
 	/**
@@ -104,6 +105,6 @@ char *move(char *s2)
 	 */
 	if (*s2 == '*')
 		return (move(s2 + 1));
-	else
+		else
 		return (s2);
 }
