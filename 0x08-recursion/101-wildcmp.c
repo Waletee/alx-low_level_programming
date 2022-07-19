@@ -12,7 +12,6 @@ char *move(char *s2);
  * Return: 1 if the strings can be considered identical
  * otherwise 0
  */
-
 int wildcmp(char *s1, char *s2)
 {
 	/**
@@ -38,7 +37,6 @@ int wildcmp(char *s1, char *s2)
 			return (1);
 		return (wildcmp(s1 + 1, s2 + 1));
 	}
-	
 	/**
 	 * if we reached the end of both strings,
 	 * return 0
@@ -103,7 +101,7 @@ char *move(char *s2)
 	 * increment s2 by 1
 	 * else return the address of
 	 * the first char past all *
-	 */	
+	 */
 	if (*s2 == '*')
 		return (move(s2 + 1));
 	else
